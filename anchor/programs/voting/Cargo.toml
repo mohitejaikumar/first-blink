@@ -1,0 +1,21 @@
+[package]
+description = "Created with Anchor"
+edition = "2021"
+name = "voting"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "voting"
+
+[features]
+anchor-debug = []
+cpi = ["no-entrypoint"]
+default = []
+idl-build = ["anchor-lang/idl-build"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+
+[dependencies]
+anchor-lang = "0.30.1"
